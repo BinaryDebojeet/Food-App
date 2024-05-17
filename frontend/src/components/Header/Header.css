@@ -43,20 +43,36 @@
     background-color: #747474;
     color: white;
 }
-@media (max-width:1050px){
 
-    .header-contents{
+@media (max-width:1050px){
+    .content{
         max-width: 45%;
     }
 }
+
 @media (max-width:750px){
-    .header-contents{
+
+    .content{
         max-width: 65%;
     }
-    .header-contents p{
+
+    .content p{
        display: none;
     }
-    .header-contents button{
+
+    .content button{
        padding: 2vw 4vw;
+    }
+}
+
+@media (max-width: 395px){
+    .content button {
+        padding: 1vw 2vw;
+        font-size: max(1vw, 8px);
+       
+    }
+
+    .content h2{
+        font-size: 18px;
     }
 }
