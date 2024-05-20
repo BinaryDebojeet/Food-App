@@ -7,7 +7,7 @@ export default function LoginPopup({setShowLogin}) {
 
     const {url,setToken} = useContext(StoreContext)
 
-    const [currState, setCurrState] = useState("Sign Up")
+    const [currState, setCurrState] = useState("Sign In")
     const [data,setData] = useState({
         name:"",
         email:"",
@@ -22,7 +22,7 @@ export default function LoginPopup({setShowLogin}) {
 
 
 const onLogin = async (event) => {
-    event.preventDefault()
+    event.preventDefault() 
     let newUrl = url;
     if(currState=="Login"){
         newUrl += "/api/user/login"
