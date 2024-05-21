@@ -6,7 +6,7 @@
 }
 
 .navbar .logo{
-    width: 150px;
+    width: 200px;
     cursor: pointer;
 }
 
@@ -36,7 +36,7 @@
     background: transparent;
     font-size: 17px;
     color: #49557e;
-    border: 1px solid tomato;
+    border: 1px solid #E49B0F;
     padding: 10px 30px;
     border-radius: 50px;
     transition: 0.5s;
@@ -44,12 +44,12 @@
 }
 
 .navbar button:hover{
-    background-color: #fff4f2;
+    background-color: #FFFDD0;
 }
 
 .navbar .active{
     padding-bottom: 2px;
-    border-bottom: 2px solid #49557e;
+    border-bottom: 2px solid #E49B0F;
 }
 
 .navbar .search-icon{
@@ -61,7 +61,7 @@
     height: 10px;
     width: 10px;
     border-radius: 5px;
-    background-color: tomato;
+    background-color: #E49B0F;
     top: -8px;
     right: -8px;
 }
@@ -84,7 +84,7 @@
     background-color: #fff2ef;
     padding: 12px 25px;
     border-radius: 8px;
-    border: 1px solid tomato;
+    border: 1px solid #E49B0F;
     outline: 2px solid white;
     list-style: none;
 }
@@ -97,7 +97,7 @@
 }
 
 .nav-profile-dropdown li:hover{
-    color: tomato;
+    color: #E49B0F;
 }
 
 .nav-profile-dropdown img{

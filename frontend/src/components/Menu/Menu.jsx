@@ -5,7 +5,7 @@ import {menu_list} from "../../assets/assets"
 export default function ({category, setCategory}) {
   return (
     <div className='explore-menu' id='explore-menu'>
-        <h1 className='explore-menu-heading'>Explore Our Menu</h1>
+        <h1 className='explore-menu-heading'>Explore Our <span className='quickeats'>Menu</span></h1>
         <p className='explore-menu-text'>Discover delicious dishes! From starters to desserts, our menu features fresh, locally sourced ingredients</p>
         <div className="explore-menu-list">
             {menu_list.map((item, index) => {

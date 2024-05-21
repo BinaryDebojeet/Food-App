@@ -22,6 +22,10 @@ a{
   margin: auto;
 }
 
+.quickeats{
+  color: #e0be00;
+}
+
 @keyframes fadein{
   0%{
     opacity: 0;
