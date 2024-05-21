@@ -1,7 +1,8 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "./PlaceOrder.css";
 import { StoreContext } from "../../Context/StoreContext";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 export default function () {
 
@@ -51,7 +52,15 @@ export default function () {
       console.log(response)
     }
   }
-
+const navigate = useNavigate();
+  useEffect(()=>{
+    if(token){
+      navigate('/cart')
+    }
+    else if(getTotalCartAmount()===0){
+      navigate('/cart')
+    }
+  },[token])
 
   return (
     <form onSubmit={placeOrder} className="place-order">
