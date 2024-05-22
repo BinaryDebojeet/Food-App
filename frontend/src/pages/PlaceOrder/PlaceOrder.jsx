@@ -54,7 +54,7 @@ export default function () {
   }
 const navigate = useNavigate();
   useEffect(()=>{
-    if(token){
+    if(!token){
       navigate('/cart')
     }
     else if(getTotalCartAmount()===0){
